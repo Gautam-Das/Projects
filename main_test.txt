@@ -1,0 +1,62 @@
+This is a test file containing tests for the main function of the program
+
+test 1: testing the introduction output
+expected result:
+Welcome to street fighters demo version!
+Press the key in the bracket and then press enter to choose your character: 
+1: SleepyJeff (1) 
+2: Snorlax (2) 
+3: Lazybones (3) 
+For character descriptions press 4;
+
+test 2: testing user input
+test 2.1: User enters 1:
+expected result:
+"You have chosen SleepyJeff" is printed out followed by the game starting with sleepyjeff vs gigachad
+
+test 2.2: User enters 2:
+expected result:
+"You have chosen snorlax" is printed out followed by the game starting with snorlax vs gigachad
+
+test 2.3: User enters 3:
+expected result:
+"You have chosen lazybones" is printed out followed by the game starting with lazybones vs gigachad
+
+test 2.3: User enters 4:
+expected result: User is shown a description of the characters and program is exited
+
+test 2.4: User enters anything else:
+expected result: User is notified of incorrect input and is asked to re-enter until input is valid
+
+test 3: testing the play_game funciton or the fighters
+test 3.1: User is shown stage
+expected result:
+stage is shown with ascii print of chosen character and giga chad, the user choice should be above the stage while the next move choice should be below it
+
+
+test 3.2: getting user input
+test 3.2.1: user chooses 1
+expected result: User is notified of choice, attackmove is called and Gigachad's health is reduced
+
+test 3.2.2: user chooses 2
+expected result: User is notified of choice, healingmove is called and player's health is increased (if it can be, this functionality has seperately been tested in healingmove_test.cpp)
+
+test 3.2.3: user chooses 1
+expected result: User is notified of choice, statboost is called and player's stats are increased
+
+test 3.2.4: user chooses anything else
+expected result: User is notified of invalid choice, and is asked to reenter until the input is valid
+
+test 3.3 waiting for Gigachad's move
+expected result: Gigachad chooses a move at random, the user is notified of the choice and the corressponding action is taken
+
+test 3.4 someone's health reaches zero
+expected result: while loop is exited, game ends, user is notified of the winner, program is exited
+
+
+
+
+
+
+
+
